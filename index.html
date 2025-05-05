@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Friend ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 0px; 
+    }
+
+    .blinking-heart {
+      font-size: 200px;
+      animation: blink 1s infinite;
+      cursor: pointer;
+      margin-top: 0;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+
+    .hint {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: white;
+    }
+    #not-interested{
+        background-color: #fff;
+        border-radius: 20px;
+        height: 50px;
+    }
+  </style>
+</head>
+<body>
+    <h1>It's May 6😍</h1>
+  <h1>Come, let’s move to our world!</h1>
+  <div class="blinking-heart" onclick="window.location.href='secondpage.html'">❤️</div>
+  <p class="hint">Click the heart!</p>
+  <button onclick="kill()" id="not-interested" title="I'll kill you!">Not-Interested!</button>
+</body>
+<script>
+  var password = prompt("Enter the secret code to view the page:");
+  if(password !== "0617") {
+    document.body.innerHTML = "<h1>Access Denied</h1>";
+    }
+    function kill(){
+      alert('Poda panni')
+    }
+</script>
+</html>
